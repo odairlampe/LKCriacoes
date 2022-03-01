@@ -1,0 +1,230 @@
+
+
+.product-details-img{
+    display: inline-block;
+    padding: 3vw 1vw 0 5vw;
+    overflow: hidden;
+    width: 33vw;
+}
+
+.imgBig{
+    padding: 1vh;
+    border: 1px solid rgba(0, 0, 0, 0.335);
+    position: relative;
+    width: 100%;
+}
+
+.imgList{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.img-detail{
+    margin: 10px 3px 3px 3px;
+    width: 5vw;
+    padding: 0.2vh;
+    border: 1px solid rgba(0, 0, 0, 0.335);
+}
+
+.product-details{
+    width: 45vw;
+    float: right;
+    padding: 3vw 3vw 0 1vw;
+}
+
+.details-title{
+    padding-bottom: 2vh;
+    margin-bottom: 3vh;
+    font-size: 4vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.details-value{
+    margin-top: 2vh;
+    font-size: 4.5vh;
+}
+.details-value span{
+    font-size: 3vh;
+}
+
+.details-description{
+    font-size: 2vh;
+    margin: 0;
+}
+
+.details-comprar{
+    font-size: 3vh;
+    border:0;
+    padding: 0.5vh 4vh 0.5vh 4vh;
+    background: black;
+    color: white;
+    border-radius: 3vh;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+}
+.details-comprar:active, .btn-modal:active{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+
+.btn-modal{
+    font-size: 2vh;
+    border:0;
+    padding: 0.5vh 4vh 0.5vh 4vh;
+    background: black;
+    color: white;
+    border-radius: 3vh;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.details-fita{
+    width: 2vw;
+    margin-right: 0.5vw;
+}
+
+.details-medidas{
+    font-size: 18px;
+    margin: 0 0 0 5vw;
+    position: relative;
+    display: inline-block;
+    clear: both;
+}
+.details-medidas::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.287);
+    bottom: 0;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.details-medidas:hover::after{
+    transform: scale(1, 1);
+}
+
+.details-medidas:hover{
+    cursor: pointer;
+}
+
+.details-pagamentos{
+    display: inline-block;
+    margin: 5vh 0 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    text-align: center;
+}
+
+.details-pagamentos-titulo{
+    text-align: center;
+    width: 90%;
+    font-size: 2vh;
+    margin: 0 auto 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.details-pagamentos-img{
+    margin-right: 1vw;
+    width: 4vw;
+}
+
+.details-info{
+    margin: 3vh 0 0 0;
+}
+
+.selected{
+    border: 2px solid rgba(0, 0, 0, 0.774);
+}
+
+@media (max-width: 999px){
+
+    .product-details-img{
+        display: block;
+        padding: 15vw 4vw 0 3vw;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        width: 98vw;
+    }
+
+    .imgBig{
+        margin-left: 5px;
+        padding: 1vh;
+        border: 1px solid rgba(0, 0, 0, 0.335);
+        position: relative;
+        width: 100%;
+    }
+
+    .imgList{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content:center;
+    }
+
+    .img-detail{
+        margin: 10px 3px 3px 3px;
+        width: 13vw;
+        padding: 0.2vh;
+        border: 1px solid rgba(0, 0, 0, 0.335);
+    }
+
+    .details-title{
+        margin-right: 3vh;
+        padding-bottom: 2vh;
+        margin-bottom: 3vh;
+        font-size: 5vw;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+        text-align: center;
+    }
+
+    .product-details{
+        width: 90vw;
+        float: right;
+        padding: 3vw 3vw 0 1vw;
+    }
+
+    .details-pagamentos-titulo{
+        text-align: center;
+        width: 100%;
+        font-size: 3vw;
+        margin: 0 auto 0 auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
+
+    .details-fita{
+        width: 4vw;
+        margin-right: 0.5vw;
+    }
+    
+    .details-medidas{
+        font-size: 17px;
+        position: relative;
+        width: 50vw;
+        margin: 6vw 0 0 0;
+        display: block;
+    }
+    .details-medidas::after{
+        display: none;
+    }
+
+    .details-pagamentos{
+        text-align: center;
+        display: block;
+        width: 60vw;
+        margin: 5vh 0 0 0;
+        border: 1px solid rgba(0, 0, 0, 0.178);
+    }
+    .details-pagamentos-img{
+        margin-right: 1vw;
+        width: 9vw;
+    }
+
+}
