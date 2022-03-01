@@ -1,0 +1,7 @@
+The navbar and footer's inclusion was made using jquery's .load()
+property, wich wasn't working with github pages.
+knowing that, i uploaded on a host for tests and it was working
+fine there.
+(The page also works using VsCode Live Server).
+
+Page link: https://lkcriacoesfree.000webhostapp.com/
